@@ -12,7 +12,7 @@ Basic terraform structure to use the module:
 
 ```
 module "onebox" {
-  source = "github.com/EMEA-TAC/prisma-cloud-modules/tree/main/GCP-onebox-module"
+  source = "github.com/EMEA-TAC/prisma-cloud-modules/GCP-onebox-module"
   name = 
   pcc-tar = 
   pcc-version = 
