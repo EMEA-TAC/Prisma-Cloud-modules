@@ -22,3 +22,7 @@ variable "pcc-tar" {
   type = string
   default = "prisma_cloud_compute_edition_31_03_103.tar.gz"
 }
+
+variable "gcp_service_account_key" {
+  description = "The creds for GCP"
+}
