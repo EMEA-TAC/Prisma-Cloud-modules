@@ -1,3 +1,9 @@
+provider "google" {
+   credentials = base64decode(var.gcp_service_account_key)
+   project     = "emea-tac-cloud-and-compute"
+   region      = var.region
+ }
+
 resource "google_compute_firewall" "allow-pcce" {
   name = "allow-pcce-${var.name}"
   network = var.network
